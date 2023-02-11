@@ -74,8 +74,8 @@ h6 {
 
     /* Primary Colors */
 
-    --soft-blue: hsl(215, 51%, 70%);
-    --cyan: hsl(178, 100%, 50%); 
+    --clr-soft-blue: hsl(215, 51%, 70%);
+    --clr-cyan: hsl(178, 100%, 50%); 
     
     /* Neutral Colors */ 
     --clr-main-bg-dark-blue : hsl(217, 54%, 11%);
@@ -96,7 +96,7 @@ h6 {
 
 body {
     font-family: 'Outfit', sans-serif;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: var(--fw-regular);
     background-color: var(--clr-main-bg-dark-blue);
 }
@@ -115,6 +115,11 @@ body {
     border-radius: var(--universal-radius);
 }
 
+.nft-card-content {
+    display: grid;
+    gap: 0.5rem;
+}
+
 .nft-title {
     color: var(--clr-text-white);
     font-weight: var(--fw-bold);
@@ -122,16 +127,31 @@ body {
 }
 
 .nft-description {
-    color: var(--clr-text-white);
+    color: var(--clr-soft-blue);
 }
 
+.flex-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.flex-group:nth-child {
+    color: var(--clr-cyan);
+}
+
+.nft-attribution span {
+    color: var(--clr-soft-blue);
+}
 
 /* Footer Attribution */
 .attribution {
     font-size: 11px;
     text-align: center;
+    color: var(--clr-cyan);
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--clr-cyan);
 }
