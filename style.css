@@ -78,10 +78,51 @@ h6 {
     --cyan: hsl(178, 100%, 50%); 
     
     /* Neutral Colors */ 
-    --main-bg-dark-blue : hsl(217, 54%, 11%);
-    --card-bg-dark-blue: hsl(216, 50%, 16%); 
-    --line-dark-blue: hsl(215, 32%, 27%);
-    --text-white: hsl(0, 0%, 100%);
+    --clr-main-bg-dark-blue : hsl(217, 54%, 11%);
+    --clr-card-bg-dark-blue: hsl(216, 50%, 16%); 
+    --clr-line-dark-blue: hsl(215, 32%, 27%);
+    --clr-text-white: hsl(0, 0%, 100%);
+
+    /* font weights */
+    --fw-regular: 300;
+    --fw-semi-bold: 400;
+    --fw-bold: 500;
+
+    /* border radius */
+    --universal-radius: 0.8rem;
+}
+
+/* General Styling */
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.125rem;
+    font-weight: var(--fw-regular);
+    background-color: var(--clr-main-bg-dark-blue);
+}
+
+.nft-card{
+    display: grid;
+    gap: 1.5rem;
+    background-color: var(--clr-card-bg-dark-blue);
+    margin: 3rem 2rem;
+    padding: 1.5rem;
+
+    border-radius: var(--universal-radius);
+}
+
+.nft-card > img {
+    border-radius: var(--universal-radius);
+}
+
+.nft-title {
+    color: var(--clr-text-white);
+    font-weight: var(--fw-bold);
+    font-size: 1.3rem;
+}
+
+.nft-description {
+    color: var(--clr-text-white);
 }
 
 
